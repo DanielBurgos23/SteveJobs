@@ -1,0 +1,81 @@
+body{
+background-image:url("/img/wp3506902.jpg");
+background-size: 100%;
+}
+
+h1::first-letter {
+    color: black;
+    font-family: monospace;
+    font-size: 300%;
+    
+  }
+
+h1, h3{
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 0.3px rgb(154, 154, 221);
+  
+}
+
+.centrado{
+    text-align: center;
+}
+
+.enlaces{
+    text-align: center;
+}
+
+a.sobre:hover {
+    background-color: yellow;
+    color: red;
+  }
+
+  p{
+    -webkit-text-stroke: 0.3px rgb(154, 154, 221);
+  
+      font-size: 0.45cm;
+      color: rgb(0, 0, 0);
+  }
+
+  p.fline::first-line {
+    color: red;
+}
+
+hr{
+  border: rgb(255, 255, 255) 0.2px dashed;
+    height: 0.2px;
+    margin-left: 15%;
+    margin-right: 15%;
+   
+
+}
+.prod{
+
+}
+
+h4 {
+    counter-reset: cuenta-parrafos;
+  }
+  
+  p.prod::before {
+      color: black;
+    content: counter(cuenta-parrafos)". ";
+    counter-increment: cuenta-parrafos;
+  }
+
+  a.visto:visited {
+    color: green;
+  }
+
+  .maps{
+    padding: 3px 10px;
+    border: PowderBlue 5px dashed;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  width: 300px;
+  height: 280px;
+  }
+
+  h5{
+    color: rgba(39, 100, 190, 0.685);
+  }
